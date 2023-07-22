@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "text-lg-color": "#FABE4C",
+            "text-dark-color": "#363958",
+            "text-sm-color": "#3E3E3E",
+            "banner-bg": "#FFFBF0;"
+          },
+          fontFamily: {
+            "roboto": "Roboto, sans-serif",
+            "base": "Bebas Neue, sans-serif"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="bg-banner-bg">
+    <nav>
+      <div class="navbar bg-base-100 justify-between lg:px-[135px]">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-medium">
+              <li><a>Home</a></li>
+              <li><a>Product</a></li>
+              <li><a>About us</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl"><img class="w-[250px]" src="image/icons/logo.png" alt=""></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base font-medium">
+            <li><a>Home</a></li>
+            <li><a>Product</a></li>
+            <li><a>About us</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="lg:px-[135px] py-5">
+      <div class="lg:flex items-center gap-8">
+        <div class="lg:flex-1 p-5 lg:p-0">
+          <h1 class="text-[5rem] text-text-lg-color uppercase font-base">Be the Penguins</h1>
+          <h1 class="text-[5rem] text-text-dark-color uppercase font-base">of Winter</h1>
+          <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.</p>
+          <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+              class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+        </div>
+        <div class="lg:flex-1 flex lg:justify-end justify-center">
+          <img class="w-3/4" src="image/images/model.png" alt="">
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- banner section -->
+
+  <main>
+    <article class="lg:px-[135px] p-5">
+      <section>
+        <h1 class="font-base text-[3rem] text-text-dark-color font-normal mb-5 text-center lg:text-left">W0Man Jacket
+        </h1>
+        <div class="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-7">
+
+          <div class="p-5 rounded-2xl bg-white shadow-lg ">
+            <img class="w-full p-5" src="image/images/jacket-1.png" alt="">
+            <h2 class="text-text-dark-color text-2xl font-bold font-roboto">Yellow Coat Jacket </h2>
+            <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="flex items-center justify-between">
+              <h4 class="text-text-lg-color text-[2.25rem] font-roboto font-black">$234</h4>
+              <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+                  class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white shadow-lg ">
+            <img class="w-full p-5" src="image/images/jacket-2.png" alt="">
+            <h2 class="text-text-dark-color text-2xl font-bold font-roboto">Yellow Coat Jacket </h2>
+            <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="flex items-center justify-between">
+              <h4 class="text-text-lg-color text-[2.25rem] font-roboto font-black">$234</h4>
+              <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+                  class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white shadow-lg ">
+            <img class="w-full p-5" src="image/images/jacket-3.png" alt="">
+            <h2 class="text-text-dark-color text-2xl font-bold font-roboto">Yellow Coat Jacket </h2>
+            <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="flex items-center justify-between">
+              <h4 class="text-text-lg-color text-[2.25rem] font-roboto font-black">$234</h4>
+              <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+                  class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New section -->
+
+      <section>
+        <h1 class="font-base text-[3rem] text-text-dark-color font-normal mt-10 mb-10 text-center lg:text-left">Man
+          Jacket</h1>
+        <div class="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-7">
+
+          <div class="p-5 rounded-2xl bg-white shadow-lg ">
+            <img class="w-full p-5" src="image/images/jacket-4.png" alt="">
+            <h2 class="text-text-dark-color text-2xl font-bold font-roboto">Yellow Coat Jacket </h2>
+            <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="flex items-center justify-between">
+              <h4 class="text-text-lg-color text-[2.25rem] font-roboto font-black">$234</h4>
+              <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+                  class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white shadow-lg ">
+            <img class="w-full p-5" src="image/images/jacket-5.png" alt="">
+            <h2 class="text-text-dark-color text-2xl font-bold font-roboto">Yellow Coat Jacket </h2>
+            <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="flex items-center justify-between">
+              <h4 class="text-text-lg-color text-[2.25rem] font-roboto font-black">$234</h4>
+              <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+                  class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white shadow-lg ">
+            <img class="w-full p-5" src="image/images/jacket-6.png" alt="">
+            <h2 class="text-text-dark-color text-2xl font-bold font-roboto">Yellow Coat Jacket </h2>
+            <p class="text-sm-color text-base font-roboto my-5">Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="flex items-center justify-between">
+              <h4 class="text-text-lg-color text-[2.25rem] font-roboto font-black">$234</h4>
+              <button class="bg-gradient-to-r from-[#85A019] to-[#85A019] px-9 py-[18px] rounded-md text-white"><i
+                  class="fa-solid fa-truck-fast"></i> &nbsp; BUY NOW</button>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </article>
+    <!-- Main section footer -->
+    <section class="lg:px-[135px] p-5">
+      <div class="flex items-center flex-col-reverse lg:flex-row gap-5">
+
+
+        <div class="flex-1">
+
+          <div class="flex items-center gap-5 my-10">
+            <img class="w-[78px]" src="image/icons/house.png" alt="">
+            <span>
+              <h2 class="text-text-dark-color font-bold font-roboto text-2xl">Find the Perfect Fit</h2>
+              <p class="text-sm-color text-base font-roboto font-normal pr-[87px] mt-3">Everybody is different, which is why
+                we
+                offer styles for every body.</p>
+            </span>
+          </div>
+
+          <div class="flex items-center gap-5 my-10">
+            <img class="w-[78px]" src="image/icons/box.png" alt="">
+            <span>
+              <h2 class="text-text-dark-color font-bold font-roboto text-2xl">Find the Perfect Fit</h2>
+              <p class="text-sm-color text-base font-roboto font-normal pr-[87px] mt-3">Everybody is different, which is why we
+                offer styles for every body.</p>
+            </span>
+          </div>
+
+          <div class="flex items-center gap-5">
+            <img class="w-[78px]" src="image/icons/question.png" alt="">
+            <span>
+              <h2 class="text-text-dark-color font-bold font-roboto text-2xl">Find the Perfect Fit</h2>
+              <p class="text-sm-color text-base font-roboto font-normal pr-[87px] mt-3">Everybody is different, which is why we
+                offer styles for every body.</p>
+            </span>
+          </div>
+
+        </div>
+
+        <div class="flex-1 flex items-center lg:justify-end justify-center">
+          <img class="w-3/4 p-6" src="image/images/shopping.png" alt="">
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
